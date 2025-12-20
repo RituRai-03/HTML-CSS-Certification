@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b1bae4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 2px solid rgb(109, 8, 240);
+            background-color: rgb(109, 8, 240);
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        #cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+            background-color: #f44336;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .remember {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login Form</h2>
+        <form>
+            Username:
+            <input type="text" name="username" required>
+
+            Password:
+            <input type="password" name="password" required>
+
+            <div class="remember">
+                <input type="checkbox" name="remember"> Remember Me
+            </div>
+
+            <button type="submit">Login</button>
+            <button type="button" id="cancelbtn">Cancel</button>
+
+            <div class="links">
+                <a href="#">Forget Password</a> |
+                <a href="#">Register</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
