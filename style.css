@@ -1,21 +1,51 @@
-.parents   {
-    background-color: rgb(150, 128, 170);
-    height: 400px;
-    width: 400px;
-}
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: lightyellow;
+    }
 
-.child {
-    background-color: coral;
-    height: 50%;
-    width: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    color: rgb(117, 80, 11);
-    
-}
+    .parents {
+      background-color: rgb(150, 128, 170);
+      height: 400px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;   
+      justify-content: flex-start; 
+      align-items: center;
+      border-radius: 10px;
+      padding: 20px;
+    }
 
+     .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: rgb(22, 19, 19);
+      text-align: left;
+      animation: floatText 3s infinite;
+      
+     }
+
+    .child {
+      background-color: coral;
+      height: 50%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      color: rgb(117, 80, 11);
+      margin-top: auto; 
+      margin-bottom: auto;
+    }
+
+
+.parents:hover {
+    background-color: lightblue;
+    transform: rotate(45deg);
+}
 .parents:hover .child {
     /* background-color: lightgreen; */
     /* transform: translateX(100%); */
@@ -25,6 +55,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: 3;
     animation-direction: alternate;
+    
 } 
 
 @keyframes example {
